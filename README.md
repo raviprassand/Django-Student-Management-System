@@ -45,3 +45,16 @@
      ```bash
      python manage.py runserver
      ```
+
+Homepage: http://127.0.0.1:8000/
+Admin Panel: http://127.0.0.1:8000/admin/
+
+## Challenges Encountered
+
+1. **Admin Redirect Issue**:
+   - **Problem**: When initially running the project, accessing `http://127.0.0.1:8000` redirected to the home page instead of the admin page.
+   - **Solution**: Added proper routing in the `urls.py` file to ensure the `/admin/` URL works as expected.
+
+2. **Database Migration Errors**:
+   - **Problem**: Errors while migrating due to unrecognized or conflicting migrations.
+   - **Solution**: Resolved by checking for missing models and recreating migrations.
